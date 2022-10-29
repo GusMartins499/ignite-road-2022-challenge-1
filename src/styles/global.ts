@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme['gray-700']};
+    background: ${({ theme }) => theme['gray-600']};
   }
 
   body, input, textarea, button {
