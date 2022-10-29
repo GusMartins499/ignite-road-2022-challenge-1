@@ -1,4 +1,3 @@
-import React from 'react'
 import { PlusCircle } from 'phosphor-react'
 import {
   HomeContainer,
@@ -6,8 +5,11 @@ import {
   ContainerLogo,
   TaskInput,
   NewTaskButton,
+  Tasks,
 } from './styles'
 import Logo from '../../assets/logo.svg'
+import { InfoTasks } from '../../components/InfoTasks'
+import { ListTasks } from '../../components/ListTasks'
 
 export const Home = () => {
   return (
@@ -24,6 +26,10 @@ export const Home = () => {
           </NewTaskButton>
         </form>
       </FormContainer>
+      <Tasks>
+        <InfoTasks />
+        <ListTasks />
+      </Tasks>
     </HomeContainer>
   )
 }

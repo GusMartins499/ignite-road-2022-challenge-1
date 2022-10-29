@@ -15,6 +15,22 @@ export const HomeContainer = styled.main`
   }
 `
 
+export const ContainerLogo = styled.div`
+  width: 100%;
+  padding: 4.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme['gray-700']};
+`
+
+export const FormContainer = styled.div`
+  width: 100%;
+  max-width: 75rem;
+  height: 100%;
+  background-color: ${({ theme }) => theme['gray-600']};
+`
+
 export const TaskInput = styled.input`
   width: 40rem;
   height: 3rem;
@@ -31,21 +47,6 @@ export const TaskInput = styled.input`
   }
 `
 
-export const ContainerLogo = styled.div`
-  width: 100%;
-  padding: 4.6rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: ${({ theme }) => theme['gray-700']};
-`
-
-export const FormContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: ${({ theme }) => theme['gray-600']};
-`
-
 export const NewTaskButton = styled.button`
   width: 6rem;
   height: 3rem;
@@ -57,11 +58,16 @@ export const NewTaskButton = styled.button`
   justify-content: center;
   background-color: ${({ theme }) => theme['blue-300']};
   color: ${({ theme }) => theme['gray-100']};
-  transition: color 0.3s, background-color 0.3s;
+  transition: background-color 0.3s;
   gap: 0.5rem;
   cursor: pointer;
   &:hover {
     background-color: ${({ theme }) => theme['blue-100']};
-    color: ${({ theme }) => theme['gray-200']};
   }
+`
+
+export const Tasks = styled.div`
+  width: 100%;
+  max-width: 46rem;
+  margin-top: 4rem;
 `
